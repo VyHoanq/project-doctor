@@ -76,7 +76,7 @@ const Hero = () => {
                         <div className="w-full px-4 lg:w-6/12">
                             <div className="lg:ml-auto lg:text-right">
                                 <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                                    <img
+                                    <Image
                                         src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
                                         alt="hero"
                                         className="max-w-full lg:ml-auto"
@@ -127,13 +127,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const SingleImage = ({ href, imgSrc }: { href: string, imgSrc: string }) => {
-    return (
-        <>
-            <Link href={href} className="flex w-full items-center justify-center">
-                <Image src={imgSrc} alt="brand image" className="h-10 w-full" />
-            </Link>
-        </>
-    );
-};
