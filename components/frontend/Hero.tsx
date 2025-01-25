@@ -1,5 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
     return (
@@ -22,15 +24,15 @@ const Hero = () => {
                                 {/*  */}
                                 <ul className="flex flex-wrap items-center mt-6">
                                     <li>
-                                        <a
+                                        <Link
                                             href="/#"
                                             className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-black hover:bg-blue-dark lg:px-7"
                                         >
                                             Get Started
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="/#"
                                             className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary hover:bg-gray-200 hover:rounded-2xl dark:text-white"
                                         >
@@ -64,7 +66,7 @@ const Hero = () => {
                                                 </svg>
                                             </span>
                                             Download App
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
 
@@ -129,9 +131,9 @@ export default Hero;
 const SingleImage = ({ href, imgSrc }: { href: string, imgSrc: string }) => {
     return (
         <>
-            <a href={href} className="flex w-full items-center justify-center">
-                <img src={imgSrc} alt="brand image" className="h-10 w-full" />
-            </a>
+            <Link href={href} className="flex w-full items-center justify-center">
+                <Image src={imgSrc} alt="brand image" className="h-10 w-full" />
+            </Link>
         </>
     );
 };
