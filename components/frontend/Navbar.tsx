@@ -18,8 +18,8 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-white">
-            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+        <header className="bg-white border-b border-gray-400/60">
+            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8 ">
                 <div className="flex lg:flex-1">
                     <Link href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
@@ -27,6 +27,7 @@ export default function Navbar() {
                             alt=""
                             src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
                             className="h-8 w-auto"
+                            width={500} height={500}
                         />
                     </Link>
                 </div>
@@ -69,6 +70,7 @@ export default function Navbar() {
                                 alt=""
                                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
                                 className="h-8 w-auto"
+                                width={300} height={300}
                             />
                         </Link >
                         <button
